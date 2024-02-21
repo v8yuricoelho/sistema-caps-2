@@ -17,7 +17,7 @@ ActiveRecord::Schema[7.0].define(version: 20_240_221_202_211) do
   enable_extension 'plpgsql'
 
   create_table 'health_centers', force: :cascade do |t|
-    t.integer 'code', null: false
+    t.string 'code', null: false
     t.string 'name', null: false
     t.datetime 'created_at', null: false
     t.datetime 'updated_at', null: false
